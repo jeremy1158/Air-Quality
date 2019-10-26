@@ -11,18 +11,15 @@
    <title>Air Quality Index</title>
    <style>
       .arrow-right {
-         
-         left: 76%;
-         top: -18px;
-         /* width: 80px; */
+         left: 75%;
+         top: -20px;         
          height: 0;
-         border-top: 111px solid transparent;
-         border-bottom: 62px solid transparent;
+         border-top: 118px solid transparent;
+         border-bottom: 66px solid transparent;
          border-left: 81px solid #fff;
          position: absolute;
-         z-index: 2;
-      }
-      
+         z-index: 1;
+      }      
    </style>
 </head>
 <body>
@@ -31,7 +28,7 @@
          <div class="left-header col-9">
             <div class="left-top">
                <div class="back">
-                     <span>N A Q I</span>
+                  <span>N A Q I</span>
                </div>
                <div class="front"> 
                   <h1>National Air Quality Index</h1>
@@ -39,19 +36,17 @@
             </div>                                 
          </div>
          <div class="col-1 arrow-right">
-
          </div>
          <div class="right-header col-3">
-               <div class="blue-cap">
-                                         
-               </div>  
+            <div class="blue-cap">                                         
+            </div>  
          </div> 
       </div>     
    </header>     
    <form >
-      <section class="section-main">
+      <section class="section-main container">
          <fieldset class="form-group">     
-            <legend class="text-center">Local Air Quality</legend>         
+            <legend class="text-center">Choose Your Location</legend>         
                <section class="select-options">            
                   <div class="form-group ">
                      <label class="form-control-label" for="stateID"></label>
@@ -69,31 +64,49 @@
                      </select>  
                   </div><!-- form-group -->
                </section>       
-         </fieldset>
-            <nav class="nav nav-tabs">
-               <a class="nav-item nav-link" href="#">Home</a>
-               <a class="nav-item nav-link" href="#">Second</a>
-               <a class="nav-item nav-link" href="#">Third</a>
-            </nav>
+         </fieldset>            
          <div class="text-right">
             <button class="btn btn-primary" type="submit">Submit</button>
-         </div>
+         </div>       
       </section>
    </form>
-   <section>
-      <div class="" id="aqi-display">
-            <div class="card border-0 mt-md-5 pt-md-5 bg-transparent">
-                  <div class="card-body bg-transparent text-center">
-                  <h4 class="card-title text-dark">Special title treatment</h4>
-                  <p class="card-text text-secondary">With supporting text below as a natural lead-in to additional content.</p>
-                  <div class='text-center'><a href="#" class="btn btn-danger text-white">Go somewhere</a></div>
-                  </div>
+   <section class="container">
+      <nav class="nav nav-tabs">
+         <a class="nav-item nav-link active" href="#">View 1</a>
+         <a class="nav-item nav-link" href="#">View 2</a>
+         <a class="nav-item nav-link" href="#">View 3</a>
+      </nav>
+      <div class="aqi-main">
+         <div class="card border-1 mt-md-5 pt-md-5 bg-transparent">
+            <div class="card-body bg-transparent text-center">
+               <h3 class="card-title text-dark">Main City</h3>
+               <p class="card-text text-secondary">With supporting text below as a natural lead-in to additional content.</p>
             </div>
+         </div>
+      </div>
+      <div class="aqi-secondary" id="aqi-display">
+         <div class="card border-1 mt-md-5 pt-md-5 bg-transparent">
+            <div class="card-body bg-transparent text-center">
+               <h3 class="card-title text-dark">Secondary City 1</h3>
+               <p class="card-text text-secondary">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+         </div>
+         <div class="card border-1 mt-md-5 pt-md-5 bg-transparent">
+            <div class="card-body bg-transparent text-center">
+               <h3 class="card-title text-dark">Secondary City 2</h3>
+               <p class="card-text text-secondary">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+         </div>
+         <div class="card border-1 mt-md-5 pt-md-5 bg-transparent">
+            <div class="card-body bg-transparent text-center">
+               <h3 class="card-title text-dark">Secondary City 3</h3>
+               <p class="card-text text-secondary">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+         </div>
       </div>
    </section>
    <footer></footer>
-<script>
-  
+<script>  
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
