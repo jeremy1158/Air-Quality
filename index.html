@@ -20,11 +20,32 @@
          width: 50%;
          margin-right: auto;
          margin-left: auto;
-      }     
+      }    
+      header{
+         height: 200px;
+         position: relative;         
+      } 
+      .header-top{
+         height: 100%;
+         background: #cdcdcd;
+      }
    </style>
 </head>
 <body>
-   <header>National Air Quality Index</header>  
+   <header>
+      <div class="header-top mx-auto">
+         <div class="left-header-top row">
+            <div class="col-9">
+                  <h1>National Air Quality Index</h1>
+            </div>
+            <div class="col-3">
+
+            </div>            
+         </div>
+         <div class="right-header-top"></div>
+      </div>
+      <div class="header-bottom"></div>
+   </header>     
    <form >
       <section class="section-main">
          <fieldset class="form-group">     
@@ -47,6 +68,11 @@
                   </div><!-- form-group -->
                </section>       
          </fieldset>
+            <nav class="nav nav-tabs">
+               <a class="nav-item nav-link" href="#">Home</a>
+               <a class="nav-item nav-link" href="#">Second</a>
+               <a class="nav-item nav-link" href="#">Third</a>
+            </nav>
          <div class="text-right">
             <button class="btn btn-primary" type="submit">Submit</button>
          </div>
@@ -58,7 +84,15 @@
       </div>
    </section>
    <footer></footer>
-
+<script>
+   var city1 = []   
+   $("button").click(function(){
+      $.each(city1, function( index, value ) {
+         $("#aqi-display").append();
+      });
+  
+   });  
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
