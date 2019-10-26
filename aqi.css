@@ -1,0 +1,156 @@
+
+
+h1{
+   margin: 35px 0 0 15px;
+   font-size: 1.5rem;
+   color: #1b1b1b;
+   text-align: left;
+}
+header{
+   height: 150px;
+   position: relative;         
+}    
+.diagonal
+   {
+   min-height: 150px;
+
+   }
+.diagonal-container{
+   position: relative;
+   overflow: hidden;
+   transition:.5s all;
+}
+.blue-cap{
+   width: 100%;
+   height: 150px;
+   background: #1c3d71; /* Old browsers */
+   background: -moz-linear-gradient(left,  #1c3d71 1%, #1c3d71 55%, #6689a1 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(left,  #1c3d71 1%,#1c3d71 55%,#6689a1 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right,  #1c3d71 1%,#1c3d71 55%,#6689a1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3d71', endColorstr='#6689a1',GradientType=1 ); /* IE6-9 */
+
+}
+.bottom-diagonal::before{
+   content:'';
+   box-sizing: border-box;
+   position:absolute;   
+   width:220px;
+   height: 40px; 
+   background: #1c3d71; /* Old browsers */
+   background: -moz-linear-gradient(left,  #1c3d71 1%, #1c3d71 55%, #6689a1 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(left,  #1c3d71 1%,#1c3d71 55%,#6689a1 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right,  #1c3d71 1%,#1c3d71 55%,#6689a1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3d71', endColorstr='#6689a1',GradientType=1 ); /* IE6-9 */
+
+   background-origin:content-box;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-attachment:fixed;
+   top: 0;
+   left:-121px;
+   border-left: 175px solid white;
+   border-bottom: 317px solid rgba(0,0,0,0);
+   transition:.1s all;
+}
+.diagonal-container:before{
+   content:'';
+   box-sizing: border-box;
+   position:absolute;
+   width:100%;
+   height: 100%; 
+   background: #1c3d71; /* Old browsers */
+   background: -moz-linear-gradient(left,  #1c3d71 1%, #1c3d71 55%, #6689a1 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(left,  #1c3d71 1%,#1c3d71 55%,#6689a1 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right,  #1c3d71 1%,#1c3d71 55%,#6689a1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3d71', endColorstr='#6689a1',GradientType=1 ); /* IE6-9 */
+
+   background-origin:content-box;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-attachment:fixed;
+   top: 0;
+   left:0;
+   border-left: 175px solid white;
+   border-top: 317px solid rgba(0,0,0,0);
+   transition:.1s all;
+}
+
+.diagonal-text{
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform:translateX(100%);
+   padding-left: 300px !important;
+   transition:.1s all;
+}
+.diagonal-image:hover .diagonal-text{
+   transform:translateX(0);
+}
+.header{
+   align-items: stretch;
+   height: 100%;
+}
+.header-bottom{
+   height: 66px;
+   position: relative;
+   overflow: hidden;
+   top: -66px;
+}
+.left-header{         
+   position: relative;
+   width: 100%
+}
+ .left-top .back {
+   position: absolute;
+   background: #fff;
+   color: #f6f6f6;        
+   width: 100%;
+   height: 70%;
+   font-size: 5em;
+   font-weight: 900;
+   font-family: 'Roboto', sans-serif;
+   float: right;
+}
+.left-top .back span {
+   float: right;
+   letter-spacing: 1rem;
+   margin-right: 10%;
+
+}
+.left-top .front {
+   position: absolute;
+   background: transparent;
+   color: #000;        
+   width: 100%;
+   height: 70%;
+}
+.select-options{        
+   display: flex;
+   flex-flow: column;
+   justify-content:  space-between;
+}
+.select-options div{     
+   min-width: 250px;
+}
+.section-main{
+   width: 75%;
+   margin-right: auto;
+   margin-left: auto;
+}    
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   
+   h1{
+      margin: 35px 0 0 35px;
+      font-size: 2rem;      
+      text-align: center;
+   }
+   .select-options{        
+     
+      flex-flow: row;
+      
+   }
+
+}
