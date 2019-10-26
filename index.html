@@ -4,47 +4,49 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="aqi.css">
    <title>Air Quality Index</title>
    <style>
-      .select-options{        
-         display: flex;
-         justify-content:  space-between;
+      .arrow-right {
+         
+         left: 76%;
+         top: -18px;
+         /* width: 80px; */
+         height: 0;
+         border-top: 111px solid transparent;
+         border-bottom: 62px solid transparent;
+         border-left: 81px solid #fff;
+         position: absolute;
+         z-index: 2;
       }
-      .select-options div{     
-         min-width: 250px;
-      }
-      .section-main{
-         width: 50%;
-         margin-right: auto;
-         margin-left: auto;
-      }    
-      header{
-         height: 200px;
-         position: relative;         
-      } 
-      .header-top{
-         height: 100%;
-         background: #cdcdcd;
-      }
+      
    </style>
 </head>
 <body>
    <header>
-      <div class="header-top mx-auto">
-         <div class="left-header-top row">
-            <div class="col-9">
+      <div class="header mx-auto row">           
+         <div class="left-header col-9">
+            <div class="left-top">
+               <div class="back">
+                     <span>N A Q I</span>
+               </div>
+               <div class="front"> 
                   <h1>National Air Quality Index</h1>
-            </div>
-            <div class="col-3">
-
-            </div>            
+               </div>                 
+            </div>                                 
          </div>
-         <div class="right-header-top"></div>
-      </div>
-      <div class="header-bottom"></div>
+         <div class="col-1 arrow-right">
+
+         </div>
+         <div class="right-header col-3">
+               <div class="blue-cap">
+                                         
+               </div>  
+         </div> 
+      </div>     
    </header>     
    <form >
       <section class="section-main">
@@ -80,18 +82,18 @@
    </form>
    <section>
       <div class="" id="aqi-display">
-
+            <div class="card border-0 mt-md-5 pt-md-5 bg-transparent">
+                  <div class="card-body bg-transparent text-center">
+                  <h4 class="card-title text-dark">Special title treatment</h4>
+                  <p class="card-text text-secondary">With supporting text below as a natural lead-in to additional content.</p>
+                  <div class='text-center'><a href="#" class="btn btn-danger text-white">Go somewhere</a></div>
+                  </div>
+            </div>
       </div>
    </section>
    <footer></footer>
 <script>
-   var city1 = []   
-   $("button").click(function(){
-      $.each(city1, function( index, value ) {
-         $("#aqi-display").append();
-      });
   
-   });  
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
