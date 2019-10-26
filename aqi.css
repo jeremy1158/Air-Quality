@@ -1,0 +1,108 @@
+
+
+h1{
+   margin: 35px 0 0 15px;
+   font-size: 1.5rem;
+   color: #1b1b1b;
+   text-align: left;
+   position: relative;
+   z-index: 2;
+}
+header{
+   height: 150px;
+   position: relative;         
+}    
+
+.blue-cap{
+   width: 100%;
+   height: 150px;
+   background: #1c3d71; /* Old browsers */
+   background: -moz-linear-gradient(left,  #1c3d71 1%, #1c3d71 55%, #6689a1 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(left,  #1c3d71 1%,#1c3d71 55%,#6689a1 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right,  #1c3d71 1%,#1c3d71 55%,#6689a1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3d71', endColorstr='#6689a1',GradientType=1 ); /* IE6-9 */
+
+}
+
+.header{
+   align-items: stretch;
+   height: 100%;
+}
+.header-bottom{
+   height: 66px;
+   position: relative;
+   overflow: hidden;
+   top: -66px;
+}
+.left-header{         
+   position: relative;
+   width: 100%;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6689a1+0,ffffff+59,ffffff+100 */
+background: #6689a1; /* Old browsers */
+background: -moz-linear-gradient(left,  #6689a1 0%, #ffffff 59%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #6689a1 0%,#ffffff 59%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #6689a1 0%,#ffffff 59%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6689a1', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+}
+ .left-top .back {
+   position: absolute;   
+   color: #f6f6f6;        
+   width: 100%;
+   height: 70%;
+   font-size: 5em;
+   font-weight: 900;
+   font-family: 'Roboto', sans-serif;
+   float: right;
+}
+.left-top .back span {
+   float: right;
+   letter-spacing: 0rem;
+   margin-right: 10%; 
+   
+}
+.left-top .front {
+   position: absolute;
+   background: transparent;
+   color: #000;        
+   width: 100%;
+   height: 70%;
+}
+.select-options{        
+   display: flex;
+   flex-flow: column;
+   justify-content:  space-between;
+}
+.select-options div{     
+   min-width: 250px;
+}
+.section-main{
+   width: 75%;
+   margin-right: auto;
+   margin-left: auto;
+}    
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   
+   h1{
+      margin: 35px 0 0 35px;
+      font-size: 2rem;      
+      text-align: center;
+     
+   }
+   .aqi-main{
+      
+   }
+   .aqi-secondary{
+      display: flex;
+      flex-flow: row;
+   }
+   .left-top .back span {      
+      letter-spacing: 1rem;
+   }
+   .select-options{   
+      flex-flow: row;      
+   }
+
+}
